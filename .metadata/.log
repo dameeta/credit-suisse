@@ -4784,3 +4784,30 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-06 12:21:20.025
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2021-09-06 12:51:48.647
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 1 0 2021-09-06 12:52:17.287
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-06 12:52:17.507
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-06 12:52:17.511
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY Activator 1 0 2021-09-06 12:52:17.854
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-09-06 12:52:33.135
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-06 12:52:33.896
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-09-06 12:52:33.899
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY Activator 1 0 2021-09-06 12:52:33.910
+!MESSAGE Has main method computation for project 'demo'
