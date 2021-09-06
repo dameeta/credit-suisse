@@ -1,0 +1,73 @@
+package com.pack.dm;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/servletEx")
+public class servletEx extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		doGet(request, response);
+	PrintWriter out =response.getWriter();
+	response.setContentType("text/html");
+	String nme=request.getParameter("name");
+	String address=request.getParameter("address");
+	String email=request.getParameter("email");
+	int age=Integer.parseInt(request.getParameter("age"));
+
+	final String insertquery = "INSERT INTO studenttable" + "(name,address,email,age) values"
+			+ "(?,?,?,?);";
+	Connection con = null;
+	try {
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "root", "root");
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+	try {
+
+		Class.forName("com.mysql.cj.jdbc.Driver");
+
+		PreparedStatement pst = con.prepareStatement(insertquery);
+
+		pst.setString(1, nme);
+		pst.setString(2, address);
+		pst.setString(3, email);
+		pst.setDouble(4, age);
+
+		System.out.println(pst);
+		pst.executeUpdate();
+
+	} catch (SQLException | ClassNotFoundException sg) {
+
+		sg.printStackTrace();
+
+		try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	}
+
+}

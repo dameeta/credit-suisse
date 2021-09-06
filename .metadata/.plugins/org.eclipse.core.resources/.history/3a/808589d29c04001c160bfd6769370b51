@@ -1,0 +1,14 @@
+package mycollections;
+
+import java.util.HashSet;
+
+public class SetExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Set <Integer> s1=new HashSet<>();
+		
+	}
+
+}

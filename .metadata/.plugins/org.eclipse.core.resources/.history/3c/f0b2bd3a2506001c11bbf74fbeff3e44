@@ -1,0 +1,18 @@
+package DateExamples;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+public class Date1Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Date d1=new Date();
+		System.out.println(d1);
+	  LocalDate d=LocalDate.now();
+	  System.out.println(d);
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package exceptionDemos;
+
+public class testIpAddressException {
+
+	public void cheIp(String ipaddress) throws inva
+	{
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

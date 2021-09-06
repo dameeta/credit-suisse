@@ -1,0 +1,16 @@
+package mycollections;
+
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int size=3;
+		
+		Vector<Integer>  v1= new Vector<>(size);
+		
+	}
+
+}

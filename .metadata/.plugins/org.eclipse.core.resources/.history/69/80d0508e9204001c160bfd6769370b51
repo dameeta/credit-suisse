@@ -1,0 +1,19 @@
+package mycollections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List l1=new ArrayList();
+		l1.add(67);
+		l1.add("Hello");
+		l1.add(true);
+		l1.add('Y');
+		
+	}
+
+}

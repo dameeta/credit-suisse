@@ -1,0 +1,16 @@
+package mycollections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Map<Student> map=new HashMap<Student>();
+		
+		
+	}
+
+}

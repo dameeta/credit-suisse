@@ -1,0 +1,18 @@
+package lamdaPack;
+
+public class lamdademo1 {
+
+	
+	public int Add(int x,int y)
+	{
+		
+		return x+y;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		->( body of method )
+	}
+
+}

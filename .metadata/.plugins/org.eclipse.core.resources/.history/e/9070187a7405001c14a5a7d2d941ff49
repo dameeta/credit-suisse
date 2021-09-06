@@ -1,0 +1,30 @@
+package lamdaPack;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.*;
+public class lamdademo1 {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ List <String> l1=new ArrayList<String>();
+ l1.add("A");
+ l1.add("B");
+ l1.add("D");
+ l1.add("A");
+ l1.add("K");
+
+ l1.forEach(i -> System.out.print(i + "\t"));
+ System.out.println();
+ System.out.println("*********************************************************************");
+		
+ 
+ 
+		 	.filter(i-> i == "A")	
+		 	.count();	
+ System.out.println(count);
+}
+}

@@ -1,0 +1,19 @@
+package mycollections;
+
+import java.util.ArrayList;
+
+public class IteratorExample {
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer> al =new ArrayList<Integer>();
+		al.add(333);
+		al.add(38);
+		al.add(353);
+		al.add(34);
+		al.add(76);
+		al.add(23);
+		
+	}
+
+}

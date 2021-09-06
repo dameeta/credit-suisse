@@ -1,0 +1,14 @@
+package JdbcDemos;
+
+public class CrudDemo {
+
+
+	
+	static final String insertquery= "INSERT INTO producttable" + "(pr_id,pr_name,pr_description,price) values" + "(?,?,?,?);";
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package JdbcDemos;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class CrudDemo {
+
+
+	
+	static final String insertquery= "INSERT INTO producttable" + "(pr_id,pr_name,pr_description,price) values" + "(?,?,?,?);";
+	
+	public void recordinsert() throws SQLException{
+		
+		System.out.println("Inserting the data in sql");
+		try(Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db?useSSL=false","root","root");
+			
+			PreparedStatement pst=con.prepareStatement(insertquery)){
+			
+			pst.setInt(1,1);
+			pst.setString(2,"Soap");
+			pst.setString(3,"Bath Soap");
+			pst.setDouble(4,150.23);
+			
+			System.out.println(pst);
+			pst.executeUpdate();
+					
+		}
+		catch(SQLException sg)
+		{
+			
+			sg.printStackTrace();
+			
+		}
+			
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

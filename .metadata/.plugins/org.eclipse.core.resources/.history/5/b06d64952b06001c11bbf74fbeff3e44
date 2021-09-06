@@ -1,0 +1,30 @@
+package DateExamples;
+
+import java.util.Locale;
+
+public class LocaleDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale lc=new Locale("en");
+		System.out.println(lc);
+		Locale lc1=Locale.JAPANESE;
+		System.out.println(lc1);
+		Locale le=new Locale("en","UK");
+		System.out.println(le);
+		
+		String datastring=new String();
+		Locale [] newlocal= {new Locale("sh"),
+							  new Locale("Sh","th"),
+							  new Locale("th","TH","TH")
+		};
+		
+			
+				
+				
+		}
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package exceptionDemos;
+
+public class testIpAddressException {
+
+	public void cheIp(String ipaddress) throws invalidIpAddress
+	{
+		if(ipaddress != "192.168.2.2")
+		{
+			throw new invalidIpAddress("Please enter valid ip");
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

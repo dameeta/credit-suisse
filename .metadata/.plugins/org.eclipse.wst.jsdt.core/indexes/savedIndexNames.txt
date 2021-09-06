@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\credit-suisse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3264294512.index
+762760374.index
+3580162539.index
+3211301427.index
+1619713739.index
+1426750659.index
