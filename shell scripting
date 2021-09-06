@@ -1,1 +1,55 @@
 
+
+echo "Hello World";
+read   c1
+read   c2
+read   c3
+smll=$c1
+
+if [ $c2 -lt $smll ]
+
+then
+smll=$c2
+#echo "c2 is smallest"
+fi
+if [ $c3 -lt $smll ]
+
+then 
+smll=$c3
+#echo "c3 is smallest"
+fi
+echo smallest is $smll
+
+
+
+read , execute, write permission
+chmod  +  adding permission file or directory
+       - removing
+	=  setting the designated permissions
+
+
+ls -1 filename
+
+chmod u-x filename
+
+-rw-rw-r--
+
+- == file type
+2-4  rw- permission for user
+
+5-7  rw- permission for group
+
+8 to 10  r--  permission for others
+//giving permission to group
+
+chmod u+x myfile.txt
+//remiving permission from group
+
+chmod g-x myfile.txt
+chmod u-w myfile.txt
+chmod a+w myfile.txt
+
+chmod o=rw myfile.txt
+
+chmod u=rwx, g=rw, o=r myfile.txt
+
